@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+body{
+    display: block;
+    background-color: pink;
+    background: url(image/timg3.jpg) no-repeat  ;
+    height: 100vh;
+    
+}
+#major,header{
+    width: 350px;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+    border-bottom: solid white 2px;
+}
+header h1{
+    font-size: 30px;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    width: 350px;
+    text-align: center;
+    margin-left: 0 !important ;
+    border-radius: 15px;
+    margin: 10px;
+}
+input{
+    outline: none;
+    width: 350px;
+    height: 29px;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+    border-radius: 15px;
+   
+}
+input[type = 'radio']{
+    display: inline;
+    vertical-align:/* middle*/bottom; 
+    width: 20px;
+    /* height: 20px; */
+    margin-right: 25px;      
+}
+#nex,#live{
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+    border-radius: 20px;
+    height: 29px;
+    line-height: 29px;
+    background-color: #fff;
+    color: #888;
+}
+.left{
+    float: left;
+}
+#nex span,#live span{
+    margin-bottom: 3px;
+}
+p{
+    float: left;
+    color: #fff;
+    font-size: 15px;
+}
+textarea{
+    resize: none;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    width: 345px;
+    height: 130px;
+    border-radius: 10px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    color: #000;
+}
+.counts,.times{
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
+    font-size: 10px;
+    color: #fff;
+}
+#submit{
+    cursor: pointer;
+    background-color: rgb(87, 194, 236);
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+/* //判断 */ 
+input:valid + span:after {
+      position: absolute;
+      right: 10px;
+      top: 2px;
+      content: '✓';
+      padding-left: 5px;
+      color: #009000;
+}
+/* //*字体图标 */
+ul li i{
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    font-size: 23px!important ;
+    color: #888!important ;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="font_fek74kf4n24/iconfont.css">
+    <link rel="stylesheet" href="de.css">
+</head>
+<body>
+    <header>
+        <h1>网管队宣策组</h1>
+        <h1>招新报名</h1>
+    </header>
+    <div id="major">
+        <form action="">
+            <ul>
+                <li><i class="iconfont icon-xingmingyonghumingnicheng"></i><input type="text" required placeholder="姓名" minlength="2" required><span></span></li>
+                <li><i class="iconfont icon-xueshengjibenxinxiguanli"></i><input type="text"  required placeholder="学号" pattern="[0-9]{10}" required ><span></span></li>
+                <li>
+                    <div id="nex">
+                        <i class="iconfont icon-gender"></i>
+                        <span class="left">性别</span>
+                        <label for="nan">男</label> <input id="nan" type="radio" name="nex" required>
+                        <label for="nv">女</label> <input type="radio" name="nex" id="nv">
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <div id="live">
+                        <i class="iconfont icon-susheguanli"></i>
+                        <span class="left">宿舍</span>
+                        <label for="weast">西区</label> <input  id="weast" type="radio" name="apartment" required>
+                        <label for="east">东区</label> <input  id="east" type="radio" name="apartment">
+                        <span></span>
+                    </div>
+                </li>
+                <li><i class="iconfont icon-jiaoxuelou-01"></i><input type="text" required placeholder="学院名称" minlength="3"><span></span></li>
+                <li><i class="iconfont icon-zhuanye1"></i><input type="text" required placeholder="专业及班级 例：计算机类13班"  minlength="5"><span></span></li>
+                <li><i class="iconfont icon-dianhua1 "></i><input type="tel" pattern="[0-9]{10}" required = 'required' placeholder="手机号码"><span></span></li>
+                <li><i class="iconfont icon-youxiang-kong"></i><input type="email" required = 'required' placeholder="电子邮箱"><span></span></li>
+                <p>自我介绍</p>
+                <li>
+                    <textarea maxlength="100" class = 'area_1'></textarea>
+                    <span class = "counts">0/100</span>
+                </li>
+                <p>为何报名本部门</p>
+                <li>
+                    <textarea maxlength="100" class = 'area_2'></textarea>
+                    <span class = 'times'>0/100</span>
+                </li>
+                <li><input type="submit" id="submit"></li>
+            </ul>
+        </form>
+    </div>
+    <script>
+        // var m = document.querySelector("textarea");
+        var area_1 = document.querySelector(".area_1")
+        var area_2 = document.querySelector(".area_2")
+        var counts = document.querySelector(".counts");
+        var times = document.querySelector(".times");
+         area_1.oninput =function(){
+            var i = this.value.length;
+            counts.innerHTML =  i + "/100";
+        }
+        area_2.oninput= function(){
+            var j = this.value.length;
+            times.innerHTML =  j + "/100";
+        }
+
+    </script>
+</body>
+</html>
