@@ -112,3 +112,33 @@ ul li i{
     font-size: 23px!important ;
     color: #888!important ;
 }
+/* /* //超级简单的响应式 * */
+@media screen and (min-width: 900px){
+    input{
+        width: 450px;
+        height: 28px;
+    }
+    input[type = 'radio']{
+        width: 20px;
+    }
+    #major,header{
+        width: 450px;
+    }
+    textarea{
+        width: 450px;
+        height: 128px;
+    }
+    #nex,#live{
+        width: 450px;
+        height: 28px;
+    }
+    input:valid + span:after {
+        position: absolute;
+        right: -85px;
+        top: 0px;
+        font-size: 23px;
+  }
+  .counts,.times{
+      right: -90px;
+  }
+}
